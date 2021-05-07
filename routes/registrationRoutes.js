@@ -337,7 +337,6 @@ router.post(
     const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
     console.log("Password hashed " + hashedPassword);
-    console.log("Password hashed " + hashedPassword);
     var cciEmployeeId = "";
 
     cciEmployeeId = req.body.firstName + req.params.cci_id;
